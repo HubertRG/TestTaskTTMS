@@ -22,8 +22,15 @@ export class PhoneFormComponent implements OnInit {
     protected router: Router
   ) {
     this.form = this.fb.group({
-      name: ['', Validators.required],
-      price: [0, [Validators.required, Validators.min(0.01)]],
+      name: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(15),
+        ],
+      ],
+      phonenumber: ['', [Validators.required, Validators.pattern(/^\d{9}$/)]],
     });
   }
   ngOnInit(): void {

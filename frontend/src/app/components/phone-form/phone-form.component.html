@@ -13,7 +13,7 @@
           formControlName="name"
         />
         <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
-          Nazwa jest wymagana.
+          Nazwa musi zawierać od 3 do 15 znaków.
         </div>
       </div>
       <div>

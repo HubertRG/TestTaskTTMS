@@ -10,7 +10,14 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
  ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
+builder.Services.AddCors(options =>
+{
+   options.AddPolicy("AllowAngular", policy => policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod());
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowAngular");
 
 if (app.Environment.IsDevelopment())
 {
