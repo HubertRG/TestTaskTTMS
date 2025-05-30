@@ -30,7 +30,7 @@ export class PhoneFormComponent implements OnInit {
           Validators.maxLength(15),
         ],
       ],
-      phonenumber: ['', [Validators.required, Validators.pattern(/^\d{9}$/)]],
+      phoneNumber: ['', [Validators.required, Validators.pattern(/^\d{9}$/)]],
     });
   }
   ngOnInit(): void {
