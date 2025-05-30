@@ -107,3 +107,4 @@ C:\Users\hupci\OneDrive\Pulpit\Angular\TestTaskTTMS\RestApi\obj\Debug\net8.0\ref
 C:\Users\hupci\OneDrive\Pulpit\Angular\TestTaskTTMS\RestApi\obj\Debug\net8.0\RestApi.pdb
 C:\Users\hupci\OneDrive\Pulpit\Angular\TestTaskTTMS\RestApi\obj\Debug\net8.0\RestApi.genruntimeconfig.cache
 C:\Users\hupci\OneDrive\Pulpit\Angular\TestTaskTTMS\RestApi\obj\Debug\net8.0\ref\RestApi.dll
+C:\Users\hupci\OneDrive\Pulpit\Angular\TestTaskTTMS\RestApi\obj\Debug\net8.0\RestApi.sourcelink.json

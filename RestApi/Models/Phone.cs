@@ -10,6 +10,6 @@ namespace RestApi.Models
         public string Name { get; set; } = string.Empty;
         [Required(ErrorMessage = "Numer telefonu jest wymagany")]
         [RegularExpression(@"^\d{9}$", ErrorMessage = "Numer telefonu musi zawierać dokładnie 9 cyfr")]
-        public string Number { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
     }
 }

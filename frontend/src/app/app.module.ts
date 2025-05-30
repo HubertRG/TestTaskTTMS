@@ -3,10 +3,14 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PhoneFormComponent } from './components/phone-form/phone-form.component';
+import { PhoneListComponent } from './components/phone-list/phone-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhoneFormComponent,
+    PhoneListComponent
   ],
   imports: [
     BrowserModule,
